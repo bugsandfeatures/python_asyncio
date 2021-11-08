@@ -7,18 +7,18 @@ async def f(): # first coroutine
 	print("We're here again")
 
 
-async def pb(): # second coroutine
+async def g(): # second coroutine
 
-	print("Content to pb")
+	print("Running g")
 	await asyncio.sleep(0)
-	print("Back to pb")
+	print("Back to g")
 
 
 async def main(): # 
 
 	tasks = [
 		f(),
-		pb()
+		g()
 	] # our tasks
 
 	await asyncio.gather(*tasks) # if smth from tasks is coroutine it becomes a task 
