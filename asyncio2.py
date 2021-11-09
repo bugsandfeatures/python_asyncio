@@ -9,7 +9,8 @@ def sec(): # time display function
 
 
 async def f1():
-
+	
+	print("Slava-loh")
 	print(f'f1 started {sec()}')
 	await asyncio.sleep(2)
 	print(f'f1 ended {sec()}')
