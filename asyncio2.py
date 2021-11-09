@@ -3,28 +3,28 @@ import asyncio
 
 start = time()
 
-def tic(): # time display function
+def sec(): # time display function
 
 	return 'at %1.1f sec' % (time() - start)
 
 
 async def f1():
 
-	print(f'f1 started {tic()}')
+	print(f'f1 started {sec()}')
 	await asyncio.sleep(2)
-	print(f'f1 ended {tic()}')
+	print(f'f1 ended {sec()}')
 
 
 async def f2():
 
-	print(f'f2 started {tic()}')
+	print(f'f2 started {sec()}')
 	await asyncio.sleep(2)
-	print(f'f2 ended {tic()}')
+	print(f'f2 ended {sec()}')
 
 
 async def f3():
 
-	print(f'while other coroutines are blocked {tic()}') # while coroutines sleep 2 sec
+	print(f'while other coroutines are blocked {sec()}') # while coroutines sleep 2 sec
 	await asyncio.sleep(1)
 	print('Done!')
 
