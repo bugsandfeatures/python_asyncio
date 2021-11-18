@@ -6,14 +6,14 @@ def task(n):
 	rint = random.randint(0, 2) # generate random time
 
 	sleep(rint)
-	print('Task %s done' % n, rint)
+	print('Task %s ended' % n, rint)
 
 
 async def task_async(n): # the same is task(), but this is a coroutine
 	rint = random.randint(0, 2)
 
 	await asyncio.sleep(rint)
-	print('Task %s done' % n, rint)
+	print('Task %s ended' % n, rint)
 
 def sync():
 	for i in range(1, 10):
