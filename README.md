@@ -1,3 +1,3 @@
-# asyncio_lesson
+# python_asyncio
 
 Основы асинхронного программирования.
