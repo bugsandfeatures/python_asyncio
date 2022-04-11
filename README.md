@@ -1,2 +1,3 @@
 # asyncio_lesson
-Asynchronous programming course codes.
+
+Основы асинхронного программирования.
